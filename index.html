@@ -67,7 +67,16 @@ button:hover{
 
 <p>Ordinateur personnel d'Elyana Hawthorne</p>
 
-<input type="password" id="password" placeholder="Mot de passe">
+<div style="position:relative;width:90%;margin:auto;">
+<input type="password" id="password" placeholder="Mot de passe" style="width:100%;padding-right:45px;box-sizing:border-box;">
+
+<span onclick="voirMdp()"
+style="position:absolute;right:15px;top:50%;transform:translateY(-50%);
+cursor:pointer;font-size:22px;user-select:none;">
+👁︎
+</span>
+
+</div>
     
 <button onclick="verifierMotDePasse()">Déverrouiller</button>
 
@@ -75,7 +84,23 @@ button:hover{
 
 </div>
 <script>
+function voirMdp(){
 
+let champ=document.getElementById("password");
+
+if(champ.type=="password"){
+
+champ.type="text";
+
+}
+
+else{
+
+champ.type="password";
+
+}
+
+}
 function verifierMotDePasse(){
 
 let mdp=document.getElementById("password").value.toLowerCase().trim();
