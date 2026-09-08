@@ -20,11 +20,11 @@ body{
     width:100vw;
     height:100vh;
 
-    background:linear-gradient(180deg,#132235,#0b1624);
-
-    background-size:cover;
-    background-position:center;
-
+   background-image:url("images/fond-blackwood.jpg");
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+background-attachment:fixed;
     position:relative;
 
 }
