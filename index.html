@@ -67,11 +67,41 @@ button:hover{
 
 <p>Ordinateur personnel d'Elyana Hawthorne</p>
 
-<input type="password" placeholder="Mot de passe">
+<input type="password" id="password" placeholder="Mot de passe">
+    
+<button onclick="verifierMotDePasse()">Déverrouiller</button>
 
-<button>Déverrouiller</button>
+<p id="message" style="color:#ff6b6b;margin-top:15px;"></p>
 
 </div>
+<script>
 
+function verifierMotDePasse(){
+
+let mdp=document.getElementById("password").value.toLowerCase().trim();
+
+if(mdp=="la justice ne peut pas attendre"){
+
+document.getElementById("message").style.color="#7CFC00";
+document.getElementById("message").innerHTML="Connexion en cours...";
+
+setTimeout(function(){
+
+window.location.href="ordinateur.html";
+
+},1200);
+
+}
+
+else{
+
+document.getElementById("message").style.color="#ff6b6b";
+document.getElementById("message").innerHTML="Mot de passe incorrect.";
+
+}
+
+}
+
+</script>
 </body>
 </html>
