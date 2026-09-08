@@ -131,6 +131,67 @@ style="width:100%;height:auto;display:block;">
     </div>
 
 </div>
+<div id="conclusions"
+style="
+display:none;
+position:fixed;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+width:85vw;
+height:85vh;
+background:white;
+border-radius:12px;
+box-shadow:0 20px 60px rgba(0,0,0,.6);
+overflow:hidden;
+z-index:9999;
+">
+
+<div
+style="
+background:#243447;
+color:white;
+padding:12px 18px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+">
+
+<strong>📄 Conclusions.pdf</strong>
+
+<button onclick="fermerConclusions()"
+style="
+background:none;
+border:none;
+color:white;
+font-size:24px;
+cursor:pointer;
+">
+✕
+</button>
+
+</div>
+
+<div
+style="
+height:calc(100% - 55px);
+overflow-y:auto;
+padding:25px;
+">
+
+<iframe
+src="Conclusion(1).pdf"
+style="
+width:100%;
+height:100%;
+border:none;
+">
+</iframe>
+
+</div>
+
+</div>
+    
 <script src="script.js"></script>
 
 </body>
